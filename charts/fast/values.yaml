@@ -1,0 +1,23 @@
+# These values are custom to override the default ones
+replicaCount: 1
+
+image:
+  repository: ghcr.io/nathansegers/fastapi-intro
+  tag: latest
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+
+nodeSelector:
+  kubernetes.io/hostname: willems-brecht
+
+service:
+  type: ClusterIP
+  port: 80
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: "test"
