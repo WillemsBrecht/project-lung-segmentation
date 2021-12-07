@@ -11,6 +11,8 @@ imagePullSecrets: []
 nodeSelector:
   kubernetes.io/hostname: willems-brecht
 
+max_workers: 1
+
 service:
   type: ClusterIP
   port: 80
