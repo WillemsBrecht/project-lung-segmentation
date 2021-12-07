@@ -35,7 +35,7 @@ spec:
                 normalKeyRef:
                   key: max_workers
                   name: {{ .Release.Name }}-auth
-	  ports:
+          ports:
             - name: http
               containerPort: 80
               protocol: TCP
