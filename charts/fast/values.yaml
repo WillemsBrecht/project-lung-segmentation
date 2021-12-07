@@ -2,7 +2,7 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/willemsbrecht/lungs-fastapi
+  repository: ghcr.io/willemsbrecht/lung-segmentation-fastapi
   tag: latest
   pullPolicy: IfNotPresent
 
