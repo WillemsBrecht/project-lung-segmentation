@@ -30,7 +30,11 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-	    - MAX_WORKERS: {{ .Values.max_workers }}
+	    - name: "MAX_WORKERS"
+              valueFrom:
+                normalKeyRef:
+		  key: max_workers
+                  name: {{ .Release.Name }}-auth
 	  ports:
             - name: http
               containerPort: 80
