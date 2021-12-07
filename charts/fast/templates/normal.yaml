@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: Normal
-metadata:
-   name: {{ .Release.Name }}-auth
-data:
-    max_workers: {{ .Values.max_workers }} 
