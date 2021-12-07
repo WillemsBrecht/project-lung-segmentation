@@ -550,6 +550,21 @@ entries:
     version: 0.2.2
   fastapi:
   - apiVersion: v2
+    appVersion: "11.0"
+    created: "2021-12-07T18:46:54.800258308Z"
+    description: Meaningful description
+    digest: 25ec504c8d37bb231e0664bec7cb2b24e1b2668268cb90a2f0a883e120a5759a
+    home: https://helm.sh/helm
+    maintainers:
+    - email: email@example.com
+      name: Name
+    name: fastapi
+    sources:
+    - https://github.com/helm/helm
+    urls:
+    - https://github.com/WillemsBrecht/project-lung-segmentation/releases/download/fastapi-12.0.0/fastapi-12.0.0.tgz
+    version: 12.0.0
+  - apiVersion: v2
     appVersion: "10.0"
     created: "2021-12-07T18:38:35.845788703Z"
     description: Meaningful description
