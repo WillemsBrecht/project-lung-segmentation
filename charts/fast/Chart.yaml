@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: "14.0.2"
+appVersion: "14.0.3"
 description: Meaningful description
 home: https://helm.sh/helm
 maintainers:
@@ -8,4 +8,4 @@ maintainers:
 name: fastapi
 sources:
   - https://github.com/helm/helm
-version: 14.0.2
+version: 14.0.3
