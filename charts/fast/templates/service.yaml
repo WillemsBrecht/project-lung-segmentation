@@ -6,6 +6,9 @@ metadata:
 {{ include "example.labels" . | indent 4 }}
 spec:
   type: {{ .Values.service.type }}
+  env:
+    - name: "MAX_WORKERS"
+      value: "1"
   ports:
     - port: {{ .Values.service.port }}
       targetPort: http
