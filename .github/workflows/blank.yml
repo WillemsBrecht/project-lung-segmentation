@@ -42,7 +42,7 @@ jobs:
           
       - name: run dockerfile
         run: |
-          docker run -p 8001:80 actions:latest
+          docker run -d -p 8001:80 actions:latest
           
       - name: test dockercontainer connection
         run: |
