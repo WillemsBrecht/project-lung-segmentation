@@ -40,13 +40,13 @@ jobs:
           cd GActions/
           docker build . -t actions:latest
           
-      - name: run dockerfile
+      - name: Build and run dockerfile
         run: |
-          docker run -d -p 8001:80 actions:latest
+          docker run -d -p 80:80 actions:latest
           
-      - name: test dockercontainer connection
+      - name: Curl index.html
         run: |
-          curl localhost:8001
+          curl localhost:80
           
       - name: stop dockercontainer
         run: |
