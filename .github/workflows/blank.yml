@@ -37,4 +37,5 @@ jobs:
           
       - name: Build dockerfile
         run: |
+          cd GActions/
           docker build . -t actions:latest
