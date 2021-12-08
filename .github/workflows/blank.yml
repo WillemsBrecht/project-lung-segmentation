@@ -39,3 +39,15 @@ jobs:
         run: |
           cd GActions/
           docker build . -t actions:latest
+          
+      - name: run dockerfile
+        run: |
+          docker run -p 8001:80 actions:latest
+          
+      - name: test dockercontainer connection
+        run: |
+          curl localhost:8001
+          
+      - name: stop dockercontainer
+        run: |
+          docker stop $( docker ps -q --filter ancestor=actions:latest )
